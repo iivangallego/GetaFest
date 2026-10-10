@@ -1,0 +1,429 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+/* CABECERA */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 15px #6366f1;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+header p {
+    margin-top: 6px;
+    color: #a5b4fc;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+/* FORMULARIO */
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+form h2 {
+    margin-top: 0;
+    color: white;
+}
+
+/* ETIQUETAS */
+
+form > label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+/* NOMBRE, APELLIDOS, EDAD Y EMAIL */
+
+form > input[type="text"],
+form > input[type="number"],
+form > input[type="email"] {
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #172033;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* QUITAR FLECHAS DEL CAMPO EDAD */
+
+form > input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+form > input[type="number"]::-webkit-inner-spin-button,
+form > input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* EFECTO AL SELECCIONAR LOS CAMPOS */
+
+form > input[type="text"]:focus,
+form > input[type="number"]:focus,
+form > input[type="email"]:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* BLOQUES DEL FORMULARIO */
+
+.Configuración.del.Pase,
+.Dias.asistencia,
+.metodo.pago,
+.acreditacion,
+.observaciones {
+    margin-top: 25px;
+    padding: 20px;
+    background: #172033;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.Configuración.del.Pase:hover,
+.Dias.asistencia:hover,
+.metodo.pago:hover,
+.acreditacion:hover,
+.observaciones:hover {
+    border-color: #6366f1;
+}
+
+/* TÍTULOS DE LAS OPCIONES */
+
+.Configuración.del.Pase p,
+.Dias.asistencia p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+/* TIPOS DE ENTRADA */
+
+.opcion-radio {
+    display: block;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.opcion-radio:hover {
+    background: #26344d;
+}
+
+.opcion-radio input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #6366f1;
+}
+
+/* DÍAS DE ASISTENCIA */
+
+.Dias.asistencia label {
+    display: inline-block;
+    margin-right: 15px;
+    color: #e2e8f0;
+    cursor: pointer;
+}
+
+.Dias.asistencia input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #6366f1;
+}
+
+/* MÉTODO DE PAGO */
+
+.metodo.pago label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.metodo.pago select {
+    width: 100%;
+    padding: 12px;
+    background: #172033;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.metodo.pago select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* FOTO DEL ASISTENTE */
+
+.acreditacion label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.acreditacion input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background: #172033;
+    color: #cbd5e1;
+    border: 1px dashed #6366f1;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* OBSERVACIONES */
+
+.observaciones label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.observaciones textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    background: #172033;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    transition: 0.2s;
+}
+
+.observaciones textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* BOTÓN CREAR ACREDITACIÓN */
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #818cf8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* ENLACES */
+
+a {
+    color: #818cf8;
+}
+
+/* ACREDITACIÓN DIGITAL */
+
+.ticket {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    color: #f8fafc;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.ticket-cabecera {
+    padding: 24px;
+    text-align: center;
+    color: white;
+    background: #1e293b;
+    border-bottom: 2px solid #6366f1;
+}
+
+.ticket-cabecera h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #6366f1;
+}
+
+.ticket-cabecera p {
+    color: #a5b4fc;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.ticket-cuerpo {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 25px;
+}
+
+.ticket-foto {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #6366f1;
+    border-radius: 12px;
+}
+
+.ticket-datos {
+    flex: 1;
+    min-width: 220px;
+}
+
+.ticket-datos h2,
+.ticket-precio h2 {
+    margin-top: 0;
+    color: #a5b4fc;
+}
+
+.ticket-datos p,
+.ticket-precio p {
+    padding: 8px 0;
+    border-bottom: 1px solid #334155;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
+.ticket-precio {
+    padding: 22px 25px 25px;
+    background: #172033;
+    border-top: 1px solid #334155;
+}
+
+.ticket-total {
+    color: #a5b4fc;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ticket-boton {
+    display: inline-block;
+    margin: 0 0 25px;
+    padding: 14px 22px;
+    color: white;
+    background: #6366f1;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ticket-boton:hover {
+    background: #818cf8;
+    transform: translateY(-2px);
+}
+
+.ticket-acciones {
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 20px 15px;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.6;
+    border-top: 1px solid #334155;
+}
+
+.footer p {
+    margin: 4px 0;
+}
+
+.footer strong {
+    color: #a5b4fc;
+    letter-spacing: 1px;
+}
+
+/* DISEÑO PARA MÓVILES */
+
+@media (max-width: 500px) {
+    body {
+        padding: 20px 12px 30px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .ticket-cuerpo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket-foto {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .ticket-cabecera h1 {
+        font-size: 30px;
+    }
+}
